@@ -51,3 +51,11 @@ function init(){
  }
  document.getElementById("message").innerHTML = showThisMessage;
 }
+function quit() {
+	document.getElementById("message").innerHTML = "The word was "+word;
+	for (var j = 0; j < word.length; j++) {
+		answerArray[j] = word[j];
+	}
+	// Solve the puzzle
+	document.getElementById("answer").innerHTML = answerArray.join(" ");
+}

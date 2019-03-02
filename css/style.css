@@ -8,8 +8,8 @@ h1{
     font-size:300px;
     min-width: width 920px;
 }
-#hangman{
+.hangman{
     float:center;
     padding:30px;
-    
+    margin-left:300px;
 }
