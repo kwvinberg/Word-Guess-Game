@@ -3,14 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kenus Vinberg Portfolio</title>
+    <title>Word Guess Game</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="javascript/game.js"></script>
 </head>
 
 <body>
+    <body background=images/c2.jpg></body>
     <h1>
         Word Guess Game
     </h1>
+    <div id="hangman">
+        <input id="guess" type="text">
+        <input type="button" value="guess" onClick="guessOne()"/>
+        <input type="button" value="quit" onClick="quit()"/>
+        <p id="message">&nbsp;</p>
+        <p>
+        <span id="answer">puzzle loading..</span>
+        </p>
+    </div>
 </body>
